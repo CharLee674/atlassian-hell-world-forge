@@ -1,0 +1,20 @@
+modules:
+  jira:issuePanel:
+    - key: hello-world-forge-hello-world-panel
+      function: main
+      title: Forge app for Duro
+      icon: https://developer.atlassian.com/platform/forge/images/icons/issue-panel-icon.svg
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/e2e8a5d0-caa3-4db5-8ff4-f2a5549b4f5e
+permissions:
+  scopes:
+    - read:comment:jira
+    - read:comment.property:jira
+    - read:group:jira
+    - read:project:jira
+    - read:project-role:jira
+    - read:user:jira
+    - read:avatar:jira
